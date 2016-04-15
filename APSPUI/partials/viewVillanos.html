@@ -1,0 +1,17 @@
+<a ui-sref="persons" class="btn-primary btn-lg nodecoration">Show ALL</a>
+<a ui-sref="viewVillanos" class="btn-primary btn-lg nodecoration">View Villanos</a>
+<a ui-sref="viewSuperHeroes" class="btn-primary btn-lg nodecoration">View Super Heroes</a>
+<a ui-sref="saveVillanos" class="btn-primary btn-lg nodecoration">Save Villanos</a>
+
+<table class="table movietable">
+    <tr>
+        <td><h3>List of Villanos ({{totalVillanos}})</h3></td>
+        <td></td>
+    </tr>
+    
+    
+    <tr ng-repeat="villano in Villanos">
+        <td>{{villano.Name}}</td>
+        <td>{{villano.Type}}</td>
+     </tr>
+</table>

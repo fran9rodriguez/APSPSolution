@@ -1,0 +1,9 @@
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShore.APSP.BL.dll
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShore.APSP.BL.pdb
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShore.APSP.DA.dll
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\bin\Release\NewShore.APSP.DA.pdb
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\obj\Release\NewShore.APSP.Controller.csprojResolveAssemblyReference.cache
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\obj\Release\NewShore.APSP.BL.dll
+C:\Fran\Projects\APSPService\NewShore.APSP.BL\obj\Release\NewShore.APSP.BL.pdb

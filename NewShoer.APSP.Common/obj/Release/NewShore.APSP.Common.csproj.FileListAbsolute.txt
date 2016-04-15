@@ -1,0 +1,4 @@
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.pdb

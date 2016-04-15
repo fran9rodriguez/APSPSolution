@@ -1,0 +1,13 @@
+<a ui-sref="viewVillanos" class="btn-primary btn-lg nodecoration">View Villanos</a>
+<a ui-sref="viewSuperHeroes" class="btn-primary btn-lg nodecoration">View Super Heroes</a>
+
+<table class="table movietable">
+    <tr>
+        <td><h3>All Persons ({{totalPersons}})</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="person in Persons">
+        <td>{{person.Name}}</td>
+        <td>{{person.Type}}</td>
+     </tr>
+</table>

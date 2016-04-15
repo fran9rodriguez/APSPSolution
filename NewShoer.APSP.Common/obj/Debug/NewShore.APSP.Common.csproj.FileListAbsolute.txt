@@ -1,0 +1,9 @@
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Debug\NewShore.APSP.Common.csprojResolveAssemblyReference.cache
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.pdb
