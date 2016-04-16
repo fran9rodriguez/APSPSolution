@@ -11,7 +11,9 @@ namespace NewShore.APSP.DA
 {
     public class FileDAT:IDataAccess
     {
-
+        /// <summary>
+        /// variables with the source data path. see web.config for updating
+        /// </summary>
         string registradosPath = ConfigurationManager.AppSettings["registradosPath"].ToString();
         string villanosPath = ConfigurationManager.AppSettings["villanosPath"].ToString();
         string superHeroesPath = ConfigurationManager.AppSettings["superHeroesPath"].ToString();
@@ -89,7 +91,7 @@ namespace NewShore.APSP.DA
             try
             {
                 var qPerson = from person in File.ReadAllLines(filename)
-                                 select new Person(person);
+                              select new Person(person);
 
                 return qPerson.ToList();
             }

@@ -12,3 +12,6 @@ C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\NewShoer.APSP.Common.pd
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\obj\Debug\NewShore.APSP.DA.csprojResolveAssemblyReference.cache
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\obj\Debug\NewShore.APSP.DA.dll
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\obj\Debug\NewShore.APSP.DA.pdb
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\NewShoer.APSP.Common.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\log4net.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\log4net.xml

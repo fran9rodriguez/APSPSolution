@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DAT\RESGISTRADOS.DAT" />
+    <None Include="DAT\SuperHeroes.DAT" />
+    <None Include="DAT\VILLANOS.DAT" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NewShoer.APSP.Common\NewShore.APSP.Common.csproj">

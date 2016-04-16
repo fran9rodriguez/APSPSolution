@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APSPService</name>
+    </assembly>
+    <members>
+        <member name="T:APSPService.IQueryService">
+            <summary>
+            Interface that define the methods that the APSP WCF Service should provide.
+            </summary>
+        </member>
+        <member name="M:APSPService.IQueryService.getAllPersons">
+            <summary>
+            This Method should provide a JSON object (QueryResult) with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Persons in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.IQueryService.getVillanos">
+            <summary>
+            This Method should provide a JSON object (QueryResult) with the list of Villanos
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Villanos in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.IQueryService.getSuperHeroes">
+            <summary>
+            This Method should provide a JSON object (QueryResult) with the list of Super Heroes
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Super Heroes in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.IQueryService.getSuperHeroesXML">
+            <summary>
+            This Method should provide a XML object (QueryResult) with the list of Super Heroes
+            </summary>
+            <returns>
+                Returns a XML object the type QueryResult that includes the list of Super Heroes in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.IQueryService.saveVillanos">
+            <summary>
+            This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back a QueryResult JSON Object with tha attribute idError = 0 in case that the File was saved sucessfully
+                and idError = -1 in case of the file wasnt saved properly.
+            </returns>
+        </member>
+        <member name="M:APSPService.IQueryService.saveSuperHeroes">
+            <summary>
+            This Method should save a list of Super Heroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back a QueryResult JSON Object with tha attribute idError = 0 in case that the File was saved sucessfully
+                and idError = -1 in case of the file wasnt saved properly.
+            </returns>
+        </member>
+        <member name="T:APSPService.QueryService">
+            <summary>
+            WCF Service that provides a set of methods to get and save Villanos and SuperHeroes data
+            </summary>
+        </member>
+        <member name="M:APSPService.QueryService.getAllPersons">
+            <summary>
+            GET Method that provides a JSON object (QueryResult) with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Persons in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.QueryService.getVillanos">
+            <summary>
+            GET Method that provides a JSON object (QueryResult) with the list of Villanos
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Villanos in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.QueryService.getSuperHeroes">
+            <summary>
+            GET Method that provides a JSON object (QueryResult) with the list of Super Heroes
+            </summary>
+            <returns>
+                Returns a JSON object the type QueryResult that includes the list of Super Heroes in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.QueryService.getSuperHeroesXML">
+            <summary>
+            GET Method that provides a XML object (QueryResult) with the list of Super Heroes
+            </summary>
+            <returns>
+                Returns a XML object the type QueryResult that includes the list of Super Heroes in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
+        <member name="M:APSPService.QueryService.saveVillanos">
+            <summary>
+            POST Method to save the list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back a QueryResult JSON Object with tha attribute idError = 0 in case that the File was saved sucessfully
+                and idError = -1 in case of the file wasnt saved properly.
+            </returns>
+        </member>
+        <member name="M:APSPService.QueryService.saveSuperHeroes">
+            <summary>
+            POST Method to save the list of Super Heroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back a QueryResult JSON Object with tha attribute idError = 0 in case that the File was saved sucessfully
+                and idError = -1 in case of the file wasnt saved properly.
+            </returns>
+        </member>
+    </members>
+</doc>

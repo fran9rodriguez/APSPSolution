@@ -1,0 +1,16 @@
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShore.APSP.CommonTests.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShore.APSP.CommonTests.pdb
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\log4net.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShoer.APSP.Common.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\log4net.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\obj\Debug\NewShore.APSP.CommonTests.csprojResolveAssemblyReference.cache
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\obj\Debug\NewShore.APSP.CommonTests.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\obj\Debug\NewShore.APSP.CommonTests.pdb
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\log4net-loggly.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Newtonsoft.Json.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Newtonsoft.Json.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShore.APSP.CommonTests.dll.config

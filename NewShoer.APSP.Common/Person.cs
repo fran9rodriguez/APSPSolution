@@ -26,7 +26,8 @@ namespace NewShore.APSP.Common
             string sType = PersonType.SuperHeroe;
             try
             {
-                if (sName.Contains("D")) sType = PersonType.Villano;
+                if(sName == "" || sName == "NULL") sType = PersonType.Other;
+                else if (sName.Contains("D")) sType = PersonType.Villano;
             }
             catch
             {

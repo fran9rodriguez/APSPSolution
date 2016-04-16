@@ -20,3 +20,6 @@ C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\bin\Debug\Microsoft.VisualSt
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\obj\Debug\NewShore.APSP.DATests.csprojResolveAssemblyReference.cache
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\obj\Debug\NewShore.APSP.DATests.dll
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\obj\Debug\NewShore.APSP.DATests.pdb
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\bin\Debug\NewShoer.APSP.Common.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\bin\Debug\log4net.dll
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DATests\bin\Debug\log4net.xml

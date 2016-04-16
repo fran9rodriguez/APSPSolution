@@ -7,3 +7,11 @@ C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Commo
 C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.pdb
 C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.dll
 C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Debug\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.XML
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\log4net-loggly.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\log4net.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\log4net.xml
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\Newtonsoft.Json.xml
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.dll.config
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Debug\NewShore.APSP.Common.csprojResolveAssemblyReference.cache

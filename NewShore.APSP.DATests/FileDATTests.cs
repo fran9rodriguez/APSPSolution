@@ -14,7 +14,7 @@ namespace NewShore.APSP.DA.Tests
     public class FileDATTests
     {
         [TestMethod()]
-        public void getAllPersonsFromFileTest()
+        public void getAllPersonsTest()
         {
             try
             {
@@ -23,12 +23,12 @@ namespace NewShore.APSP.DA.Tests
 
                 List<Person> lp = new List<Person>();
                 IDataAccess daClass = FactoryDA.Get(1);
-                                  
                 lp = daClass.getAllPersons();
                 
                 sw.Stop();
                 Double totalMilSec = sw.Elapsed.TotalMilliseconds;
-                Assert.AreEqual(lp.Count, 1118);
+
+                Assert.AreEqual(lp.Count, 1122);
                 Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
 
             }
@@ -46,16 +46,16 @@ namespace NewShore.APSP.DA.Tests
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
 
-                
+
                 bool bSave = false;
                 IDataAccess daClass = FactoryDA.Get(1);
-                
+
                 bSave = daClass.saveVillanos();
-                
+
 
                 sw.Stop();
                 Double totalMilSec = sw.Elapsed.TotalMilliseconds;
-                Assert.AreEqual(bSave, true);               
+                Assert.AreEqual(bSave, true);
                 Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
 
             }
@@ -80,7 +80,7 @@ namespace NewShore.APSP.DA.Tests
 
                 sw.Stop();
                 Double totalMilSec = sw.Elapsed.TotalMilliseconds;
-                Assert.AreEqual(bSave, true);                
+                Assert.AreEqual(bSave, true);
                 Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
 
             }
@@ -89,5 +89,57 @@ namespace NewShore.APSP.DA.Tests
                 Assert.Inconclusive(ex.Message.ToString());
             }
         }
+
+        [TestMethod()]
+        public void getVillanosTest()
+        {
+            try
+            {
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+
+                List<Person> lp = new List<Person>();
+                IDataAccess daClass = FactoryDA.Get(1);
+
+                lp = daClass.getVillanos();
+
+                sw.Stop();
+                Double totalMilSec = sw.Elapsed.TotalMilliseconds;
+                Assert.AreEqual(lp.Count, 100);
+                Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
+
+            }
+            catch (Exception ex)
+            {
+                Assert.Inconclusive(ex.Message.ToString());
+            }
+        }
+
+        [TestMethod()]
+        public void getSuperHeroesTest()
+        {
+            try
+            {
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+
+                List<Person> lp = new List<Person>();
+                IDataAccess daClass = FactoryDA.Get(1);
+
+                lp = daClass.getSuperHeroes();
+
+                sw.Stop();
+                Double totalMilSec = sw.Elapsed.TotalMilliseconds;
+                Assert.AreEqual(lp.Count, 1020);
+                Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
+
+            }
+            catch (Exception ex)
+            {
+                Assert.Inconclusive(ex.Message.ToString());
+            }
+        }
+
+        
     }
 }

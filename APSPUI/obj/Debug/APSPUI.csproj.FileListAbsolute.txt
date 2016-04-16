@@ -28,6 +28,11 @@ C:\Fran\Projects\APSPSolution\APSPUI\bin\Microsoft.AI.Web.xml
 C:\Fran\Projects\APSPSolution\APSPUI\bin\Microsoft.AI.WindowsServer.xml
 C:\Fran\Projects\APSPSolution\APSPUI\bin\Microsoft.ApplicationInsights.xml
 C:\Fran\Projects\APSPSolution\APSPUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Fran\Projects\APSPSolution\APSPUI\obj\Debug\APSPUI.csprojResolveAssemblyReference.cache
 C:\Fran\Projects\APSPSolution\APSPUI\obj\Debug\APSPUI.dll
 C:\Fran\Projects\APSPSolution\APSPUI\obj\Debug\APSPUI.pdb
+C:\Fran\Projects\APSPSolution\APSPUI\bin\log4net-loggly.dll
+C:\Fran\Projects\APSPSolution\APSPUI\bin\log4net.dll
+C:\Fran\Projects\APSPSolution\APSPUI\bin\Newtonsoft.Json.dll
+C:\Fran\Projects\APSPSolution\APSPUI\bin\log4net.xml
+C:\Fran\Projects\APSPSolution\APSPUI\bin\Newtonsoft.Json.xml
+C:\Fran\Projects\APSPSolution\APSPUI\obj\Debug\APSPUI.csprojResolveAssemblyReference.cache
