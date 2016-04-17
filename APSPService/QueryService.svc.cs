@@ -15,9 +15,11 @@ using NewShore.APSP.Common;
 namespace APSPService
 {
     /// <summary>
-    /// WCF Service that provides a set of methods to get and save Villanos and SuperHeroes data
+    /// WCF Service that provides a set of methods to get and save Villanos and SuperHeroes data.
+    ///  [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     /// </summary>
-    [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall,
+                     ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class QueryService : IQueryService
     {
         //Object to control the Multiple Concurrence
@@ -35,17 +37,21 @@ namespace APSPService
                     UriTemplate = "getAllPersons")]
         public QueryResult getAllPersons()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    return new QueryResult(0,"OK",q.getAllPersons());                    
+                    using (Query q = new Query())
+                    {
+                        return new QueryResult(0, "OK", q.getAllPersons());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
                 }
             }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
-            }
+            
         }
 
         /// <summary>
@@ -60,17 +66,20 @@ namespace APSPService
                     UriTemplate = "getVillanos")]
         public QueryResult getVillanos()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    QueryResult result = new QueryResult(0, "OK", q.getVillanos());
-                    return result;
+                    using (Query q = new Query())
+                    {
+                        QueryResult result = new QueryResult(0, "OK", q.getVillanos());
+                        return result;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
+                }
             }
         }
 
@@ -86,17 +95,20 @@ namespace APSPService
                     UriTemplate = "getSuperHeroes")]
         public QueryResult getSuperHeroes()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    QueryResult result = new QueryResult(0, "OK", q.getSuperHeroes());
-                    return result;
+                    using (Query q = new Query())
+                    {
+                        QueryResult result = new QueryResult(0, "OK", q.getSuperHeroes());
+                        return result;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
+                }
             }
         }
 
@@ -112,17 +124,20 @@ namespace APSPService
                     UriTemplate = "getSuperHeroesXML")]
         public QueryResult getSuperHeroesXML()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    QueryResult result = new QueryResult(0, "OK", q.getSuperHeroes());
-                    return result;
+                    using (Query q = new Query())
+                    {
+                        QueryResult result = new QueryResult(0, "OK", q.getSuperHeroes());
+                        return result;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
+                }
             }
         }
 
@@ -138,20 +153,23 @@ namespace APSPService
                     UriTemplate = "saveVillanos")]
         public QueryResult saveVillanos()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    bool bSave = q.saveVillanos();
-                    QueryResult result = new QueryResult();
-                    if (bSave) result = new QueryResult(0, "The File was saved sucessfully.", q.getVillanos());
-                    else result = new QueryResult(-1, "Error. The File was not saved sucessfully.");
-                    return result;
+                    using (Query q = new Query())
+                    {
+                        bool bSave = q.saveVillanos();
+                        QueryResult result = new QueryResult();
+                        if (bSave) result = new QueryResult(0, "The File was saved sucessfully.", q.getVillanos());
+                        else result = new QueryResult(-1, "Error. The File was not saved sucessfully.");
+                        return result;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
+                }
             }
         }
 
@@ -167,20 +185,23 @@ namespace APSPService
                     UriTemplate = "saveSuperHeroes")]
         public QueryResult saveSuperHeroes()
         {
-            try
+            lock (this.ThisLock)
             {
-                using (Query q = new Query())
+                try
                 {
-                    bool bSave = q.saveSuperHeroes();
-                    QueryResult result = new QueryResult();
-                    if (bSave) result = new QueryResult(0, "The File was saved sucessfully.", q.getSuperHeroes());
-                    else result = new QueryResult(-1, "Error. The File was not saved sucessfully.");
-                    return result;
+                    using (Query q = new Query())
+                    {
+                        bool bSave = q.saveSuperHeroes();
+                        QueryResult result = new QueryResult();
+                        if (bSave) result = new QueryResult(0, "The File was saved sucessfully.", q.getSuperHeroes());
+                        else result = new QueryResult(-1, "Error. The File was not saved sucessfully.");
+                        return result;
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                return new QueryResult(-1, ex.Message.ToString());
+                catch (Exception ex)
+                {
+                    return new QueryResult(-1, ex.Message.ToString());
+                }
             }
         }
 

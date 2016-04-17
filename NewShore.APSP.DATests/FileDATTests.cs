@@ -14,7 +14,7 @@ namespace NewShore.APSP.DA.Tests
     public class FileDATTests
     {
         [TestMethod()]
-        public void getAllPersonsTest()
+        public void GetAllPersons_FileDAT_ReturnsVoid()
         {
             try
             {
@@ -39,7 +39,7 @@ namespace NewShore.APSP.DA.Tests
         }
 
         [TestMethod()]
-        public void saveVillanosTest()
+        public void SaveVillanos_FileDAT_ReturnsVoid()
         {
             try
             {
@@ -66,7 +66,7 @@ namespace NewShore.APSP.DA.Tests
         }
 
         [TestMethod()]
-        public void saveSuperHeroesTest()
+        public void SaveSuperHeroes_FileDAT_ReturnsVoid()
         {
             try
             {
@@ -75,10 +75,10 @@ namespace NewShore.APSP.DA.Tests
 
                 bool bSave = false;
                 IDataAccess daClass = FactoryDA.Get(1);
-
                 bSave = daClass.saveSuperHeroes();
 
                 sw.Stop();
+
                 Double totalMilSec = sw.Elapsed.TotalMilliseconds;
                 Assert.AreEqual(bSave, true);
                 Assert.IsFalse(totalMilSec > Double.Parse("500"), "The method takes more than 500 milliseconds");
@@ -91,7 +91,7 @@ namespace NewShore.APSP.DA.Tests
         }
 
         [TestMethod()]
-        public void getVillanosTest()
+        public void GetVillanos_FileDAT_ReturnsVoid()
         {
             try
             {
@@ -116,7 +116,7 @@ namespace NewShore.APSP.DA.Tests
         }
 
         [TestMethod()]
-        public void getSuperHeroesTest()
+        public void GetSuperHeroes_FileDAT_ReturnsVoid()
         {
             try
             {

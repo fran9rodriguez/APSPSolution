@@ -4,5 +4,246 @@
         <name>NewShoer.APSP.Common</name>
     </assembly>
     <members>
+        <member name="T:NewShore.APSP.Common.FactoryLogger">
+            <summary>
+            Static Class that implements the Factory Patter Design for the Logger system
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.FactoryLogger.Get(System.Int32)">
+            <summary>
+            Mathod that give back the <see cref="T:NewShore.APSP.Common.ILogger"/> object depending of the id
+            </summary>
+            <param name="id">Class Identifier. 1.Loggly, 2.XML </param>
+            <returns>
+                Returns a <see cref="T:NewShore.APSP.Common.ILogger"/> object depending of the id
+            </returns>
+        </member>
+        <member name="T:NewShore.APSP.Common.ILogger">
+            <summary>
+            Interface that implements the neccesary methos to implent in a Logging Class
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.ILogger.Info(System.String)">
+            <summary>
+            Method that store a message of Type Info
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.ILogger.Warn(System.String)">
+            <summary>
+            Method that store a message of Type Warning
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.ILogger.Fatal(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Fatal Error happens. That means high priority
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.ILogger.Error(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Normal Error happens. That means medium priotity
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="T:NewShore.APSP.Common.IPerson">
+            <summary>
+            Interface that defines the methods  to implement an object Person (Villano or Superheroe) 
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.IPerson.getPersonType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NewShore.APSP.Common.Logger">
+            <summary>
+            Proxy Class that implements the method to store the logs of the Aplication.
+            This class uses <see cref="T:NewShore.APSP.Common.FactoryLogger"/> to obtain the class of the current Loggin system defined in 
+            the Web.cofing in the attribute idLogger. Currently this project is using Loggly System (idLogger = 1)
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.Logger.Class">
+            <summary>
+            Class where the event to log is happening
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.Logger.Method">
+            <summary>
+            Method where the event to log is happening
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.Logger.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pClass">Class where the event to log is happening</param>
+            <param name="pMethod">MEthod where the event to log is happening</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Logger.Info(System.String)">
+            <summary>
+            Method that store a message of Type Info
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Logger.Warn(System.String)">
+            <summary>
+            Method that store a message of Type Warning
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Logger.Fatal(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Fatal Error happens. That means high priority
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Logger.Error(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Normal Error happens. That means medium priotity
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="T:NewShore.APSP.Common.Loggly">
+            <summary>
+            Class that implements the <see cref="T:NewShore.APSP.Common.ILogger"/> methods in order to store the informaion in the Loggly System
+            </summary>
+        </member>
+        <member name="F:NewShore.APSP.Common.Loggly.logger">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.Loggly.Info(System.String)">
+            <summary>
+            Method that store a message of Type Info
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Loggly.Warn(System.String)">
+            <summary>
+            Method that store a message of Type Warning
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Loggly.Fatal(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Fatal Error happens. That means high priority
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Loggly.Error(System.String,System.Exception)">
+            <summary>
+            Method that store a message when a Normal Error happens. That means medium priotity
+            </summary>
+            <param name="pMessage">Message to store in the Logging system</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="T:NewShore.APSP.Common.Person">
+            <summary>
+            Class to implement the object Type Person
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.Person.Name">
+            <summary>
+            Name of the Person
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.Person.Type">
+            <summary>
+            Type of the Person <see cref="T:NewShore.APSP.Common.PersonType"/>
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.Person.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.Person.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pName">Name of the Person</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.Person.getPersonType(System.String)">
+            <summary>
+            Method to determinate the type of the person
+            </summary>
+            <param name="sName">Name of the person</param>
+            <returns></returns>
+        </member>
+        <member name="T:NewShore.APSP.Common.PersonType">
+            <summary>
+            Static Class that defines the diferent types of Person
+            </summary>
+        </member>
+        <member name="F:NewShore.APSP.Common.PersonType.SuperHeroe">
+            <summary>
+            Super Hero
+            </summary>
+        </member>
+        <member name="F:NewShore.APSP.Common.PersonType.Villano">
+            <summary>
+            Villano
+            </summary>
+        </member>
+        <member name="F:NewShore.APSP.Common.PersonType.Other">
+            <summary>
+            Other kind of Person
+            </summary>
+        </member>
+        <member name="T:NewShore.APSP.Common.QueryResult">
+            <summary>
+            Class that implements the attributes of the method service answer
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.QueryResult.idError">
+            <summary>
+            Error identifier
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.QueryResult.errorDescription">
+            <summary>
+            Error Description
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.QueryResult.nResults">
+            <summary>
+            Number of Results
+            </summary>
+        </member>
+        <member name="P:NewShore.APSP.Common.QueryResult.lPersons">
+            <summary>
+            List of Persons
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.QueryResult.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Common.QueryResult.#ctor(System.Int32,System.String,System.Collections.Generic.List{NewShore.APSP.Common.Person})">
+            <summary>
+            Constructor with parameters
+            </summary>
+            <param name="pidError">Error Identifier</param>
+            <param name="perrorDescription">Error Description</param>
+            <param name="plPersons">Person List</param>
+        </member>
+        <member name="M:NewShore.APSP.Common.QueryResult.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructor with paramenters
+            </summary>
+            <param name="pidError">Error Identifier</param>
+            <param name="perrorDescription">Error Description</param>
+        </member>
     </members>
 </doc>

@@ -6,13 +6,30 @@ using System.Threading.Tasks;
 
 namespace NewShore.APSP.Common
 {
+    /// <summary>
+    /// Class to implement the object Type Person
+    /// </summary>
     public class Person: IPerson
     {
+        /// <summary>
+        /// Name of the Person
+        /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Type of the Person <see cref="PersonType"/>
+        /// </summary>
         public string Type { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Person() { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="pName">Name of the Person</param>
         public Person(string pName)
         {
             Name = pName;
@@ -20,7 +37,12 @@ namespace NewShore.APSP.Common
 
         }
 
-        private string getPersonType(string sName)
+        /// <summary>
+        /// Method to determinate the type of the person
+        /// </summary>
+        /// <param name="sName">Name of the person</param>
+        /// <returns></returns>
+        public string getPersonType(string sName)
         {
             
             string sType = PersonType.SuperHeroe;

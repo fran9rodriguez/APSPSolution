@@ -15,3 +15,4 @@ C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\obj\Debug\NewShore.APSP.DA.pdb
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\NewShoer.APSP.Common.xml
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\log4net.dll
 C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\log4net.xml
+C:\Fran\Projects\APSPSolution\NewShore.APSP.DA\bin\Debug\NewShore.APSP.DA.XML

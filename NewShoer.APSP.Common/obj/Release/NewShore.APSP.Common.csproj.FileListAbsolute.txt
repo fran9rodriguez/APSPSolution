@@ -2,3 +2,14 @@ C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Comm
 C:\Fran\Projects\APSPService\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.pdb
 C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.dll
 C:\Fran\Projects\APSPService\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.dll.config
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\NewShoer.APSP.Common.pdb
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\log4net-loggly.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\log4net.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\Newtonsoft.Json.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\log4net.xml
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\bin\Release\Newtonsoft.Json.xml
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Release\NewShore.APSP.Common.csprojResolveAssemblyReference.cache
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.dll
+C:\Fran\Projects\APSPSolution\NewShoer.APSP.Common\obj\Release\NewShoer.APSP.Common.pdb

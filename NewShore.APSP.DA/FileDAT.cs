@@ -20,6 +20,12 @@ namespace NewShore.APSP.DA
 
         #region Public       
 
+        /// <summary>
+        /// This Method should provide a List of <see cref="Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
+        /// </summary>
+        /// <returns>
+        ///     Returns a List of <see cref="Person"/> 
+        /// </returns>
         public List<Person> getAllPersons()
         {
             try
@@ -32,6 +38,13 @@ namespace NewShore.APSP.DA
             }
         }
 
+
+        /// <summary>
+        /// This Method should provide a List of <see cref="Person"/> with list of Villanos
+        /// </summary>
+        /// <returns>
+        ///     Returns a List of <see cref="Person"/> 
+        /// </returns>
         public List<Person> getVillanos()
         {
             try
@@ -44,6 +57,13 @@ namespace NewShore.APSP.DA
             }
         }
 
+
+        /// <summary>
+        /// This Method should provide a List of <see cref="Person"/> with list of SuperHeroes
+        /// </summary>
+        /// <returns>
+        ///     Returns a List of <see cref="Person"/> 
+        /// </returns>
         public List<Person> getSuperHeroes()
         {
             try
@@ -56,6 +76,12 @@ namespace NewShore.APSP.DA
             }
         }
 
+        /// <summary>
+        /// This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+        /// </summary>
+        /// <returns>
+        ///     The Method give back the value true if the file was saved successfully and fale in other case
+        /// </returns>
         public bool saveVillanos()
         {
             try
@@ -69,6 +95,13 @@ namespace NewShore.APSP.DA
             }
         }
 
+
+        /// <summary>
+        /// This Method should save a list of SuperHeroes in a File called "SUPERHEROES.DAT"
+        /// </summary>
+        /// <returns>
+        ///     The Method give back the value true if the file was saved successfully and fale in other case
+        /// </returns>
         public bool saveSuperHeroes()
         {
             try
@@ -86,11 +119,18 @@ namespace NewShore.APSP.DA
 
         #region Private
 
-        private List<Person> fileQuery(string filename)
+        /// <summary>
+        /// Method that extract the List of Persons from a file
+        /// </summary>
+        /// <param name="filePath">path of the file with the list of Person</param>
+        /// <returns>
+        ///     Returns a List of <see cref="Person"/> 
+        /// </returns>
+        private List<Person> fileQuery(string filePath)
         {
             try
             {
-                var qPerson = from person in File.ReadAllLines(filename)
+                var qPerson = from person in File.ReadAllLines(filePath)
                               select new Person(person);
 
                 return qPerson.ToList();
@@ -101,6 +141,12 @@ namespace NewShore.APSP.DA
             }
         }
 
+        /// <summary>
+        /// This Method should save a list of Persons in a File determinated in fileName attribute
+        /// </summary>
+        /// <param name="lperson"> List of Persons</param>
+        /// <param name="fileName"> file where the data should be stored </param>
+        /// <returns></returns>
         private bool saveListOfPerson(List<Person> lperson, string fileName)
         {
             bool bSave = false;

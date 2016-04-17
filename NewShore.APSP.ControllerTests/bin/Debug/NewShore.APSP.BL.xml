@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewShore.APSP.BL</name>
+    </assembly>
+    <members>
+        <member name="T:NewShore.APSP.Controller.IQuery">
+            <summary>
+            Interface that define the methods that the APSP Controller should support.
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Controller.IQuery.getAllPersons">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.IQuery.getVillanos">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of Villanos
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.IQuery.getSuperHeroes">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of SuperHeroes
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.IQuery.saveVillanos">
+            <summary>
+            This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.IQuery.saveSuperHeroes">
+            <summary>
+            This Method should save a list of SuperHeroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="T:NewShore.APSP.Controller.Query">
+            <summary>
+            Class that implements all the methods defined in <see cref="T:NewShore.APSP.Controller.IQuery"/>
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.Controller.Query.getAllPersons">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.Query.getVillanos">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of Villanos
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.Query.getSuperHeroes">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of SuperHeroes
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.Query.saveVillanos">
+            <summary>
+            This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.Controller.Query.saveSuperHeroes">
+            <summary>
+            This Method should save a list of SuperHeroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+    </members>
+</doc>

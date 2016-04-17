@@ -21,7 +21,11 @@
       <DocumentationSource sourceFile="..\APSPService\bin\APSPService.XML" />
 <DocumentationSource sourceFile="..\APSPService\bin\APSPService.dll" />
 <DocumentationSource sourceFile="..\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.XML" />
-<DocumentationSource sourceFile="..\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.dll" /></DocumentationSources>
+<DocumentationSource sourceFile="..\NewShoer.APSP.Common\bin\Debug\NewShoer.APSP.Common.dll" />
+<DocumentationSource sourceFile="..\NewShore.APSP.Controller\bin\Debug\NewShore.APSP.BL.XML" />
+<DocumentationSource sourceFile="..\NewShore.APSP.Controller\bin\Debug\NewShore.APSP.BL.dll" />
+<DocumentationSource sourceFile="..\NewShore.APSP.DA\bin\Debug\NewShore.APSP.DA.XML" />
+<DocumentationSource sourceFile="..\NewShore.APSP.DA\bin\Debug\NewShore.APSP.DA.dll" /></DocumentationSources>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

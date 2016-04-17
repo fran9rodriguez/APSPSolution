@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewShore.APSP.DA</name>
+    </assembly>
+    <members>
+        <member name="T:NewShore.APSP.DA.FactoryDA">
+            <summary>
+            Static Class that implements the Factory Patter Design for the DA Layer
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.DA.FactoryDA.Get(System.Int32)">
+            <summary>
+            Mathod that give back the <see cref="T:NewShore.APSP.DA.IDataAccess"/> object depending of the id
+            </summary>
+            <param name="id">Class Identifier. 1.FileDAT, 2.SQL </param>
+            <returns>
+                Returns a <see cref="T:NewShore.APSP.DA.IDataAccess"/> object depending of the id
+            </returns>
+        </member>
+        <member name="F:NewShore.APSP.DA.FileDAT.registradosPath">
+            <summary>
+            variables with the source data path. see web.config for updating
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.getAllPersons">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.getVillanos">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of Villanos
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.getSuperHeroes">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of SuperHeroes
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.saveVillanos">
+            <summary>
+            This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.saveSuperHeroes">
+            <summary>
+            This Method should save a list of SuperHeroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.fileQuery(System.String)">
+            <summary>
+            Method that extract the List of Persons from a file
+            </summary>
+            <param name="filePath">path of the file with the list of Person</param>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.FileDAT.saveListOfPerson(System.Collections.Generic.List{NewShore.APSP.Common.Person},System.String)">
+            <summary>
+            This Method should save a list of Persons in a File determinated in fileName attribute
+            </summary>
+            <param name="lperson"> List of Persons</param>
+            <param name="fileName"> file where the data should be stored </param>
+            <returns></returns>
+        </member>
+        <member name="T:NewShore.APSP.DA.IDataAccess">
+            <summary>
+            Interface to implement the Data Access Classes
+            </summary>
+        </member>
+        <member name="M:NewShore.APSP.DA.IDataAccess.getAllPersons">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.IDataAccess.getVillanos">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of Villanos
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.IDataAccess.getSuperHeroes">
+            <summary>
+            This Method should provide a List of <see cref="T:NewShore.APSP.Common.Person"/> with list of SuperHeroes
+            </summary>
+            <returns>
+                Returns a List of <see cref="T:NewShore.APSP.Common.Person"/> 
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.IDataAccess.saveVillanos">
+            <summary>
+            This Method should save a list of Villanos in a File called "VILLANOS.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+        <member name="M:NewShore.APSP.DA.IDataAccess.saveSuperHeroes">
+            <summary>
+            This Method should save a list of SuperHeroes in a File called "SUPERHEROES.DAT"
+            </summary>
+            <returns>
+                The Method give back the value true if the file was saved successfully and fale in other case
+            </returns>
+        </member>
+    </members>
+</doc>

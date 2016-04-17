@@ -13,4 +13,3 @@ C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\obj\Debug\NewShore.APSP.
 C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\log4net-loggly.dll
 C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Newtonsoft.Json.dll
 C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\Newtonsoft.Json.xml
-C:\Fran\Projects\APSPSolution\NewShore.APSP.CommonTests\bin\Debug\NewShore.APSP.CommonTests.dll.config

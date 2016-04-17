@@ -52,3 +52,5 @@ C:\Fran\Projects\APSPSolution\APSPService\bin\APSPService.XML
 C:\Fran\Projects\APSPSolution\APSPService\bin\NewShoer.APSP.Common.xml
 C:\Fran\Projects\APSPSolution\APSPService\bin\log4net.dll
 C:\Fran\Projects\APSPSolution\APSPService\bin\log4net.xml
+C:\Fran\Projects\APSPSolution\APSPService\bin\NewShore.APSP.BL.xml
+C:\Fran\Projects\APSPSolution\APSPService\bin\NewShore.APSP.DA.xml
