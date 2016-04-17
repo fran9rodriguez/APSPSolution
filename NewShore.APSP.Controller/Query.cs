@@ -29,9 +29,9 @@ namespace NewShore.APSP.Controller
             {   
                 return FactoryDA.Get(idDataSource).getAllPersons();                
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -47,9 +47,9 @@ namespace NewShore.APSP.Controller
             {
                 return FactoryDA.Get(idDataSource).getVillanos();
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -65,9 +65,9 @@ namespace NewShore.APSP.Controller
             {
                 return FactoryDA.Get(idDataSource).getSuperHeroes();
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -83,9 +83,9 @@ namespace NewShore.APSP.Controller
             {
                 return FactoryDA.Get(idDataSource).saveVillanos();
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -101,9 +101,9 @@ namespace NewShore.APSP.Controller
             {
                 return FactoryDA.Get(idDataSource).saveSuperHeroes();
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                throw;
             }
         }
 

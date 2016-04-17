@@ -35,3 +35,4 @@ C:\Fran\Projects\APSPSolution\APSPUI\bin\log4net.dll
 C:\Fran\Projects\APSPSolution\APSPUI\bin\Newtonsoft.Json.dll
 C:\Fran\Projects\APSPSolution\APSPUI\bin\log4net.xml
 C:\Fran\Projects\APSPSolution\APSPUI\bin\Newtonsoft.Json.xml
+C:\Fran\Projects\APSPSolution\APSPUI\obj\Debug\APSPUI.csprojResolveAssemblyReference.cache

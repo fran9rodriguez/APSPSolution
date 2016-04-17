@@ -66,6 +66,8 @@ namespace NewShore.APSP.Common
             errorDescription = perrorDescription;
             nResults = 0;
             lPersons = new List<Person>();
+
+            
         }
     }
 }
