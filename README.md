@@ -1,6 +1,6 @@
 # APSPSolution
 
-This Solution contains 2 projects:
+This Solution contains 3 projects:
 
 1. <a href="https://github.com/fran9rodriguez/APSPSolution/tree/master/APSPService" target="_blank"> WCF Rest Service </a> that provides an API with the necessary methods 
 2. <a href="https://github.com/fran9rodriguez/APSPSolution/tree/master/APSPUI" target="_blank"> AngularJS GUI </a> to consume the methods implemented in the WCF Service 
@@ -9,7 +9,7 @@ This Solution contains 2 projects:
 ## WCF Service
 ### Arquitecture
 
-The idea behing the project is to use a SOAP arquitecture in order to offer a strongly de-couple solution. I've implemented 4 layers:
+The idea behind of the project is to use a SOAP arquitecture in order to offer a strongly de-couple solution. I've implemented 4 layers:
 
 1. Data Access. This layer is implemented in the project <a href="https://github.com/fran9rodriguez/APSPSolution/tree/master/NewShore.APSP.DA"> APSP.DA </a> and it has been implemented using the <a href="http://www.tutorialspoint.com/design_pattern/factory_pattern.htm"> Factory Pattern Desing </a>. One of the application requiriements is that the data will be stored in FILE.DAT but as you can imagine it doesnt make sense in the real life, so most probably we will want to change the source of this data for a SQL or noSQL data sytem. For this reason in order to avoid futures big changes and facilitate the testing I've implemented the class FactoryDA which implements an Interface IDataAccess. This class call the class FileDAT in order to handle the data using .DAT Files. In case of the user wants to change this source of data in the future it is only necessary to implement a new class with the Interface IDataAccess and update the Factory Class and thats all.
 2. Controller. This layer is implemented in the project <a href="https://github.com/fran9rodriguez/APSPSolution/tree/master/NewShore.APSP.Controller"> APSP.Controller </a>. The idea is to have an isolated business layer in order to implement the Service Contracts and service from the businees point of view. It has been implemented a Query class using the IQuery interface
@@ -18,11 +18,22 @@ The idea behing the project is to use a SOAP arquitecture in order to offer a st
 
 Regarding the Concurrency and Throttling I've decided to use the option Instance mode = Per Call and Concurrency = Multiple. In this combination, multiple instances are created for every call but multiple threads serve every method call to a WCF service instance. Every method call is handled by multiple threads. Therefor i've also implemented the lock system to avoid deadlocks.
 
-### Testing
-
-### Configuration
+The project contains Unit Test for each of the layers plus integration testing using the Service Layer. I've create a testing project for each one of the layers using Microsoft.VisualStudio.TestTools.UnitTesting (VS2015)
 
 ## AngularJS GUI
-### Arquitecture
+This GUI is implemented in AngularJS + Boostraap styles and it is used to show the result of the different functioanlities implemented in the WCF Service
 
 ### Screen Shots
+1. View All Persons
+<img src="https://github.com/fran9rodriguez/APSPSolution/blob/master/Documentation/Img/AllPersons.PNG"></img>
+
+2. View Super Heroes
+<img src="https://github.com/fran9rodriguez/APSPSolution/blob/master/Documentation/Img/SuperHeroes.PNG"></img>
+
+3. View Villanos
+<img src="https://github.com/fran9rodriguez/APSPSolution/blob/master/Documentation/Img/Villanos.PNG"></img>
+
+## Documentation
+I've created a Documentation.chm where it is possible to navigage throught the whole API specification
+<img src="https://github.com/fran9rodriguez/APSPSolution/blob/master/Documentation/Img/Documentation.PNG"></img>
+
