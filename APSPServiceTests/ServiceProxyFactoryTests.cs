@@ -73,5 +73,24 @@ namespace APSPService.Tests
             QueryResult result = instance.getSuperHeroes();
             Assert.AreEqual(result.lPersons.Count, 1020);
         }
+
+        [TestMethod]
+        public void Async_GetAllPersons_QueryService_ReturnsQueryResult()
+        {
+            var serviceProxyFactory = new ServiceProxyFactory();
+            Type proxyType = serviceProxyFactory.GetProxyType(typeof(IQueryService), CreateSampleService);
+            var instance = (IQueryService)Activator.CreateInstance(proxyType);
+
+            var result = new QueryResult();
+
+            Task t = Task.Run(async () =>
+            {
+                result = await instance.getAllPersonsAsync();
+            });
+
+            t.Wait();
+           
+            Assert.AreEqual(result.lPersons.Count, 1122);
+        }
     }
 }

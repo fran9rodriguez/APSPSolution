@@ -17,6 +17,8 @@ namespace NewShore.APSP.Controller
     {
         int idDataSource = Int32.Parse(ConfigurationManager.AppSettings["dataSource"].ToString());
 
+        #region Sync Methods
+
         /// <summary>
         /// This Method should provide a List of <see cref="Person"/> with list of the whole set of Persons (Villanos + Super Heroes)
         /// </summary>
@@ -107,6 +109,8 @@ namespace NewShore.APSP.Controller
             }
         }
 
+        #endregion
+        
         #region IDisposable
 
         void IDisposable.Dispose()

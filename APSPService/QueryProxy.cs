@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using NewShore.APSP.Common;
+using System.Threading.Tasks;
 
 namespace APSPService
 {
@@ -25,6 +26,8 @@ namespace APSPService
         {
             _target = (IQueryService)TargetFactory();
         }
+
+        #region Sync Methods
 
         /// <summary>
         /// This Method should provide a JSON object <see cref="QueryResult"/> with list of the whole set of Persons (Villanos + Super Heroes)
@@ -98,5 +101,23 @@ namespace APSPService
         {
             return _target.saveSuperHeroes();
         }
+
+        #endregion
+
+        #region Async Methods
+
+        /// <summary>
+        /// This Method should provide a JSON object <see cref="QueryResult"/> with list of the whole set of Persons (Villanos + Super Heroes)
+        /// </summary>
+        /// <returns>
+        ///     Returns a JSON object the type <see cref="QueryResult"/> that includes the list of Persons in the attribute lPersons. 
+        ///     In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+        /// </returns>
+        public Task<QueryResult> getAllPersonsAsync()
+        {
+            return _target.getAllPersonsAsync();
+        }
+
+        #endregion
     }
 }

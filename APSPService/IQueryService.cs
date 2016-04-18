@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using NewShore.APSP.Common;
+using System.Threading.Tasks;
 
 namespace APSPService
 {
@@ -14,6 +15,9 @@ namespace APSPService
     [ServiceContract]
     public interface IQueryService
     {
+
+        #region Sync Methods
+
         /// <summary>
         /// This Method should provide a JSON object (QueryResult) with list of the whole set of Persons (Villanos + Super Heroes)
         /// </summary>
@@ -73,6 +77,19 @@ namespace APSPService
         /// </returns>
         [OperationContract]
         QueryResult saveSuperHeroes();
+
+        #endregion
+
+        #region Async Methods
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [OperationContract]
+        Task<QueryResult> getAllPersonsAsync();
+
+        #endregion
 
 
     }

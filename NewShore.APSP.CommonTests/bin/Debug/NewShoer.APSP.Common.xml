@@ -200,6 +200,11 @@
             Other kind of Person
             </summary>
         </member>
+        <member name="T:NewShore.APSP.Common.QueryResultAsync">
+            <summary>
+            Class that implements the attributes of the method service answer
+            </summary>
+        </member>
         <member name="T:NewShore.APSP.Common.QueryResult">
             <summary>
             Class that implements the attributes of the method service answer

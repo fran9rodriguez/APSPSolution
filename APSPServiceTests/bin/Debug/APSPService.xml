@@ -63,6 +63,12 @@
                 and idError = -1 in case of the file wasnt saved properly.
             </returns>
         </member>
+        <member name="M:APSPService.IQueryService.getAllPersonsAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:APSPService.QueryProxy">
             <summary>
             Proxy to create a type runtime that implements the service contract <see cref="T:APSPService.IQueryService"/>
@@ -132,6 +138,15 @@
                 and idError = -1 in case of the file wasnt saved properly.
             </returns>
         </member>
+        <member name="M:APSPService.QueryProxy.getAllPersonsAsync">
+            <summary>
+            This Method should provide a JSON object <see cref="T:NewShore.APSP.Common.QueryResult"/> with list of the whole set of Persons (Villanos + Super Heroes)
+            </summary>
+            <returns>
+                Returns a JSON object the type <see cref="T:NewShore.APSP.Common.QueryResult"/> that includes the list of Persons in the attribute lPersons. 
+                In case of Error the attribute lPersons will be null and attribute errorDescription will contain the description of the error
+            </returns>
+        </member>
         <member name="T:APSPService.QueryService">
             <summary>
             WCF Service that provides a set of methods to get and save Villanos and SuperHeroes data.
@@ -191,6 +206,12 @@
                 The Method give back a <see cref="T:NewShore.APSP.Common.QueryResult"/> JSON Object with tha attribute idError = 0 in case that the File was saved sucessfully
                 and idError = -1 in case of the file wasnt saved properly.
             </returns>
+        </member>
+        <member name="M:APSPService.QueryService.getAllPersonsAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:APSPService.QueryServiceHostFactory">
             <summary>

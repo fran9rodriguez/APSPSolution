@@ -8,6 +8,8 @@ using System.Text;
 using NewShore.APSP.Controller;
 using NewShore.APSP.Common;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 /// <summary>
 /// APSPService is part of the Solution implemented to carry out the APSP Project. 
@@ -25,6 +27,8 @@ namespace APSPService
     {
         //Object to control the Multiple Concurrence
         readonly object ThisLock = new object();
+
+        #region Sync Methods
 
         /// <summary>
         /// GET Method that provides a JSON object <see cref="QueryResult"/> with list of the whole set of Persons (Villanos + Super Heroes)
@@ -243,6 +247,25 @@ namespace APSPService
                 }
             }
         }
+
+        #endregion
+
+        #region Async Methods
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<QueryResult> getAllPersonsAsync()
+        {
+            var task = Task.Factory.StartNew(() =>
+            {
+                return getAllPersons();
+            });
+            return await task.ConfigureAwait(false);
+        }
+
+        #endregion
 
     }
 }
